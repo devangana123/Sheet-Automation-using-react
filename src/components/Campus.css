@@ -1,0 +1,87 @@
+/* Campus.css */
+
+.campus-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f0f2f5;
+    padding: 20px;
+    box-sizing: border-box;
+    opacity: 0.9;
+    transition: opacity 0.5s ease;
+}
+
+.campus-form-container:hover {
+    opacity: 1;
+}
+
+.campus-form {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.campus-form:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+}
+
+.campus-form h2 {
+    margin-bottom: 20px;
+    font-size: 26px;
+    color: #333;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #555;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(45deg, #007bff, #0056b3);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background: linear-gradient(45deg, #0056b3, #003f7f);
+    transform: translateY(-3px);
+}
+
+button[type="submit"]:active {
+    transform: translateY(1px);
+    background: linear-gradient(45deg, #691d2e, #0056b3);
+}
